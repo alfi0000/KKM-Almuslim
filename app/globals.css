@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #0d5c46;
+  --color-primary-hover: #084332;
+  --color-accent: #c89d4b;
+  --color-bg: #f7f6f1;
+  --color-surface: #FFFFFF;
+  --color-border: #E2E8F0;
+  --color-text-main: #1A202C;
+  --color-text-muted: #4A5568;
+}
+
+body {
+  background-color: #f7f6f1;
+  color: #1A202C;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.campus-shell {
+  background:
+    radial-gradient(circle at 92% 8%, rgba(200, 157, 75, 0.11), transparent 17rem),
+    radial-gradient(circle at 8% 22%, rgba(13, 92, 70, 0.07), transparent 22rem),
+    #f7f6f1;
+}
+
+.campus-shell > section {
+  position: relative;
+}
+
+.campus-shell > section:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.78);
+}
+
+.section-kicker {
+  color: #0d5c46;
+  letter-spacing: 0.17em;
+}
+
+html,
+body {
+  max-width: 100%;
+}
+
+/* Strict Light & Deep Green Academic Cards */
+.academic-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px -20px rgba(16, 49, 38, 0.48);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.academic-card:hover {
+  border-color: rgba(13, 92, 70, 0.32);
+  box-shadow: 0 16px 36px -25px rgba(16, 49, 38, 0.58);
+}
+
+/* Formal Academic Form Input */
+.academic-input {
+  background-color: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  color: #1A202C;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.academic-input:focus {
+  outline: none;
+  border-color: #0F5132;
+  box-shadow: 0 0 0 3px rgba(15, 81, 50, 0.12);
+}
+
+/* Primary Button: Deep Green (#0F5132) & White Only */
+.btn-primary {
+  background-color: #0d5c46;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  transition: background-color 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #084332;
+}
+
+/* Secondary Button: Outline Style */
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: #1A202C;
+  border: 1px solid #CBD5E1;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: #F1F5F9;
+  border-color: #0F5132;
+  color: #0F5132;
+}
+
+/* Academic Badge: Light Green Tint & Deep Green Only */
+.badge-academic {
+  background-color: #eef5f0;
+  color: #0d5c46;
+  border: 1px solid #c8ded1;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F9FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0F5132;
+}
+
+/* Shared dashboard safeguards for narrow mobile viewports. */
+.dashboard-page {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-page .academic-card,
+.dashboard-page form,
+.dashboard-page input,
+.dashboard-page select,
+.dashboard-page textarea {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.dashboard-page .overflow-x-auto {
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 639px) {
+  .dashboard-page .btn-primary,
+  .dashboard-page .btn-secondary {
+    min-height: 2.5rem;
+  }
+
+  .dashboard-page > .fixed.inset-0,
+  .dashboard-page .fixed.inset-0 {
+    align-items: flex-end;
+    padding: 0.75rem;
+  }
+
+  .dashboard-page .fixed.inset-0 > .academic-card,
+  .dashboard-page .fixed.inset-0 > div[class*="max-w-"] {
+    max-height: calc(100dvh - 1.5rem);
+    overflow-y: auto;
+    padding: 1rem;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+  }
+
+  .dashboard-page .fixed.inset-0 .grid.grid-cols-2 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

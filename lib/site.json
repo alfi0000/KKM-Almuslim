@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "title": "KKM Universitas Almuslim | Portal Pengabdian Masyarakat & Inovasi Gampong",
+    "description": "Portal resmi Kuliah Kerja Masyarakat (KKM) Lembaga Penelitian dan Pengabdian kepada Masyarakat (LPPM) Universitas Almuslim Matangglumpangdua, Bireuen, Aceh.",
+    "icons": {
+      "icon": "/images/logo.png",
+      "shortcut": "/images/logo.png",
+      "apple": "/images/logo.png"
+    },
+    "keywords": [
+      "KKM UMuslim",
+      "Universitas Almuslim",
+      "Bireuen",
+      "Aceh",
+      "Kuliah Kerja Masyarakat",
+      "LPPM UMuslim",
+      "Pengabdian Masyarakat"
+    ]
+  },
+  "site": {
+    "univName": "UNIVERSITAS ALMUSLIM",
+    "univNameTitle": "Universitas Almuslim",
+    "shortName": "Umuslim",
+    "lppmName": "Lembaga Penelitian dan Pengabdian kepada Masyarakat (LPPM)",
+    "lppmShort": "LPPM Umuslim",
+    "tagline": "KKM • Lembaga Penelitian & Pengabdian kepada Masyarakat (LPPM)",
+    "portalLabel": "Portal Resmi LPPM Universitas Almuslim",
+    "logo": "/images/logo.png",
+    "logoAlt": "Logo Universitas Almuslim",
+    "description": "Portal Layanan Administrasi, Pendaftaran, dan Pelaporan Digital KKM Universitas Almuslim Matangglumpangdua, Kabupaten Bireuen, Provinsi Aceh.",
+    "address": "Kampus Universitas Almuslim, Jl. Almuslim Matangglumpangdua, Kec. Peusangan, Kab. Bireuen, Aceh 24261",
+    "phone": "+62 852-6000-1985",
+    "email": "lppm@umuslim.ac.id",
+    "website": "https://umuslim.ac.id"
+  }
+}
